@@ -19,3 +19,4 @@ $routes->post('/visiteur/updateForfait/(:num)', 'Visiteur::updateForfait/$1');
 $routes->post('/visiteur/ajouteUneLigneDeFrais/(:num)', 'Visiteur::ajouteUneLigneDeFrais/$1');
 $routes->get('/visiteur/deleteUneLigneDeFrais/(:num)/(:num)', 'Visiteur::deleteUneLigneDeFrais/$1/$2');
 $routes->get('/anonyme/login', 'Anonyme::login');
+$routes->get('/comptable/', 'Comptable::index');

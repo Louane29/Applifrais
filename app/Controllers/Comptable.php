@@ -38,7 +38,7 @@ class Comptable extends BaseController {
 		$this->authentif = new Authentif();
 		$this->session = session();
 		$this->idCompatble = $this->session->get('idUser');
-		$this->data['identite'] = $this->session->get('prenomComptable').' '.$this->session->get('nomComptable');
+		$this->data['identite'] = $this->session->get('prenom').' '.$this->session->get('nom');
 		$this->actComptable = new ActionsComptable($this->idCompatble);
 
 		// Vérification de la présence des 6 dernières fiches de frais pour le visiteur connecté

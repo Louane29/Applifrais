@@ -24,13 +24,27 @@ class DataAccess extends Model {
 	 * @return l'id, le nom, le prénom, le login et le mot de passe sous la forme d'un tableau associatif 
 	*/
 	public function getVisiteur($login){
-		$req = "select id, nom, prenom, login, mdp  
+		$req = "select id, nom, prenom, login, mdp, statut  
 						from visiteur 
-						where login=?";
+						where statut = 'visiteur'";
 		$rs = $this->db->query($req, $login);
 		$ligne = $rs->getFirstRow('array'); 
 		return $ligne;
 	}
+        
+        /**
+         * 
+         * @param type $login
+         * @return type
+         */
+        public function getComptable($login){
+		$req = "select id, nom, prenom, login, mdp 
+						from visiteur 
+						where statut= 'comptable'";
+		$rs = $this->db->query($req, $login);
+		$ligne = $rs->getFirstRow('array'); 
+		return $ligne;
+        }
 
 	/**
 	 * Retourne sous forme d'un tableau associatif toutes les lignes de frais hors forfait
