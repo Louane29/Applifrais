@@ -6,7 +6,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 use \App\Models\Authentif;
-use \App\Models\ActionsVisiteur;
+use \App\Models\ActionsComptable;
 
 /**
  * Contrôleur du module VISITEUR de l'application
@@ -57,13 +57,13 @@ class Comptable extends BaseController {
 	/**
 	 * Restitue les liste des fiches du visiteur connecté, sans détails
 	 */ 
-	public function  mesFiches($message = "")
-	{
-		$this->data['mesFiches'] = $this->actVisiteur->getLesFichesDuVisiteur();
-		$this->data['notify'] = $message;
-
-		return view('v_visiteurMesFiches', $this->data);	
-	}
+//	public function  mesFiches($message = "")
+//	{
+//		$this->data['mesFiches'] = $this->actVisiteur->getLesFichesDuVisiteur();
+//		$this->data['notify'] = $message;
+//
+//		return view('v_visiteurMesFiches', $this->data);	
+//	}
 
 	/**
 	 * Déconnecte la session
