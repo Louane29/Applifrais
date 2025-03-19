@@ -30,7 +30,7 @@ class ActionsComptable extends Model {
 	*/
 	public function getLesFichesDuVisiteur($message=null)
 	{		
-		return $this->dao->getLesFiches($this->idVisiteur);
+		return $this->dao->getLesFiches($this->idComptable);
 	}	
 
 	/**
@@ -42,8 +42,8 @@ class ActionsComptable extends Model {
 	{	
 		$res = array();
 		
-		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idVisiteur, $mois);
-		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idVisiteur, $mois);		
+		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idComptable, $mois);
+		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idCommptable, $mois);		
 		
 		return $res;
 	}

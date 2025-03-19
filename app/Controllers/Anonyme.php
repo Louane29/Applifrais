@@ -20,10 +20,6 @@ class Anonyme extends BaseController
 		{
 			return redirect()->to('/visiteur');
 		}
-                else if ($authentif->estComptable())
-                {
-                   return redirect()->to('/comptable');
-		}
 		else
 		{
 			return $this->login ();

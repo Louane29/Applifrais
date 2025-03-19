@@ -1,0 +1,1010 @@
+CRITICAL - 2025-03-19 09:31:29 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:32:56 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:32:58 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:35:20 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:36:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:40:45 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:40:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:40:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:43:55 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:43:56 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:46:23 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 09:46:26 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-03-19 09:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:48:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:49:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:51:40 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:51:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:51:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 09:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 09:51:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 10:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 10:04:43 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 10:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 10:05:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Anonyme.php(23): CodeIgniter\Model->__call('estComptable', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 10:11:10 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-03-19 10:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 10:14:52 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:18:03 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:18:04 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:26:28 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:28:17 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:23 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:24 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:32:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:36:53 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:06 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:08 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:42:08 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:45:08 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:53:31 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:53:32 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:53:32 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:53:32 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:53:33 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:02 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:02 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:19 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:31 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:31 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:31 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:54:31 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:49 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:49 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:49 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:49 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:50 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:55:51 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 10:58:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:34 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:35 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:36 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:36 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:36 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:37 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:38 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:47 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:47 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:47 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 13:11:47 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-03-19 13:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 13:46:28 --> mysqli_sql_exception: Unknown column 'statut' in 'field list' in C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'dandre')
+#4 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+#5 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+#6 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-19 13:46:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'statut' in 'field list'
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'', 'dandre')
+ 2 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 3 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 13:46:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'statut' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'', 'dandre')
+ 4 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 5 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 13:46:28 --> [Caused by] mysqli_sql_exception: Unknown column 'statut' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp, statut  
+						from visiteur 
+						where statut = \'visiteur\'', 'dandre')
+ 5 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 6 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 13:51:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 3 in C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'dandre')
+#4 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+#5 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\app\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+#6 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\lnavellou\Desktop\XAMPP\htdocs\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-19 13:51:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 3
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'', 'dandre')
+ 2 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 3 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 13:51:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'', 'dandre')
+ 4 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 5 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 13:51:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp 
+						from visiteur 
+						\'', 'dandre')
+ 5 APPPATH\Models\Authentif.php(67): App\Models\DataAccess->getVisiteur('dandre')
+ 6 APPPATH\Controllers\Anonyme.php(55): App\Models\Authentif->authentifier('dandre', 'oppg5')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:57:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:58:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 13:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:58:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:58:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:58:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 13:58:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 13:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 14:00:48 --> ErrorException: Can't use method return value in write context
+[Method: POST, Route: anonyme/seConnecter]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:00:56 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:00:57 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:07:35 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:08:22 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:08:23 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:08:23 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:08:23 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:08:24 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:17:45 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:17:46 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:18:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:24:08 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:24:09 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:25:33 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:30:00 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:30:01 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:31:00 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:31:01 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:31:01 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:31:01 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:31:07 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:39 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:40 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:41 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:42 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:43 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:33:44 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:02 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:10 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:10 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:11 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:11 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:11 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:11 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:11 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:40:12 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:45:25 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 14:45:26 --> ErrorException: Can't use method return value in write context
+[Method: GET, Route: /]
+in APPPATH\Models\Authentif.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-03-19 14:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 14:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 14:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 14:48:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 14:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-19 14:48:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Visiteur::$session is deprecated in APPPATH\Controllers\Visiteur.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Visiteur->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 14:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

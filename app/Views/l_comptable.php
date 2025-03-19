@@ -32,17 +32,11 @@
 				
 				<ul id="menuList">
 					<li class="smenu">
-						<?= anchor('visiteur/', 'Accueil', 'title="Page d\'accueil"') ?>
-					</li>
-					<li class="smenu">
-						<?= anchor('visiteur/mesFiches', 'Valider fiche de frais', 'title="Valider les fiches de frais des visiteurs"') ?>
-					</li>
-                                        <li class="smenu">
-						<?= anchor('visiteur/mesFiches', 'Suivre paiement fiche de frais', 'title="Suivre le paiement des fiches de frais des visiteurs"') ?>
+						<?= anchor('comptable/', 'Accueil', 'title="Page d\'accueil"') ?>
 					</li>
 					<br/>
 					<li class="smenu">
-						<?= anchor('visiteur/seDeconnecter', 'Se déconnecter', 'title="Déconnexion"') ?>
+						<?= anchor('comptable/seDeconnecter', 'Se déconnecter', 'title="Déconnexion"') ?>
 					</li>
 				</ul>
 				
