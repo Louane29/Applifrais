@@ -20,3 +20,4 @@ $routes->post('/visiteur/ajouteUneLigneDeFrais/(:num)', 'Visiteur::ajouteUneLign
 $routes->get('/visiteur/deleteUneLigneDeFrais/(:num)/(:num)', 'Visiteur::deleteUneLigneDeFrais/$1/$2');
 $routes->get('/anonyme/login', 'Anonyme::login');
 $routes->get('/comptable/', 'Comptable::index');
+$routes->get('/comptable/seDeconnecter', 'Comptable::SeDeconnecter');

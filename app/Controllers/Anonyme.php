@@ -22,7 +22,7 @@ class Anonyme extends BaseController
 		}
                 else if ($authentif->estComptable())
                 {
-                   return redirect()->to('/visiteur');
+                   return redirect()->to('/comptable');
 		}
 		else
 		{

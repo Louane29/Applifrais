@@ -20,12 +20,12 @@ class Authentif extends Model
 	*/
 	public function estVisiteur()
 	{	// TODO : A faire évoluer dès lors qu'il y aura des comptables gérés dans l'application
-	  return !is_null($this->session->get('idUser'));
+	  return !is_null($this->session->get('idUser') && $this->session->get('statut') = 'visiteur');
 	  
 	}
         public function estComptable() 
         {
-            return !is_null($this->session->get('idUser'));
+            return !is_null($this->session->get('idUser') && $this->session->get('statut') = 'comptable');
         }
 	
 	/**
@@ -40,7 +40,7 @@ class Authentif extends Model
 		$this->session->set('nom', $authUser['nom']);
 		$this->session->set('prenom', $authUser['prenom']);
 		$this->session->set('login', $authUser['login']);		
-                $this->session->set('statut', $authUser['statut']);
+                
 	}
 
 	/**
@@ -48,7 +48,7 @@ class Authentif extends Model
 	 */
 	public function deconnecter()
 	{
-		$authUser = array('idUser', 'nom', 'prenom', 'login', 'statut');
+		$authUser = array('idUser', 'nom', 'prenom', 'login');
 		$this->session->remove($authUser);
 		$this->session->destroy();
 

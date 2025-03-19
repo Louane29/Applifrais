@@ -25,7 +25,7 @@
 			<div id="menuGauche">
 				<div id="infosUtil">
 					<h2>
-						Visiteur :<br/>
+						Comptable :<br/>
 						<?= $identite ?>
 					</h2>
 				</div>  

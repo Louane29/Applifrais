@@ -38,7 +38,7 @@ class DataAccess extends Model {
          * @return type
          */
         public function getComptable($login){
-		$req = "select id, nom, prenom, login, mdp 
+		$req = "select id, nom, prenom, login, mdp, statut 
 						from visiteur 
 						where statut= 'comptable'";
 		$rs = $this->db->query($req, $login);
