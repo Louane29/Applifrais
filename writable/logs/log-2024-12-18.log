@@ -1,0 +1,648 @@
+INFO - 2024-12-18 10:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 10:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 13:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 13:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 13:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:48 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:48 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:48 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:48 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:49 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:49 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:49 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:49 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:49 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:50 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-18 13:20:50 --> mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist in P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom,...', 0)
+#1 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom,...')
+#2 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom,...')
+#3 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom,...', 'applifrais')
+#4 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+#5 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\app\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+#6 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+#7 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+#8 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\Documents\2SIO\PROJETS\GSB-AppliFrais\applifrais-CI45-2024\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-18 13:20:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+[Method: POST, Route: anonyme/seConnecter]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 2 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 3 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 4 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 5 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 13:20:50 --> [Caused by] mysqli_sql_exception: Table 'applifrais.visiteur' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=\'applifrais\'')
+ 4 APPPATH\Models\DataAccess.php(30): CodeIgniter\Database\BaseConnection->query('select id, nom, prenom, login, mdp  
+						from visiteur 
+						where login=?', 'applifrais')
+ 5 APPPATH\Models\Authentif.php(60): App\Models\DataAccess->getVisiteur('applifrais')
+ 6 APPPATH\Controllers\Anonyme.php(50): App\Models\Authentif->authentifier('applifrais', 'applifrais')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Anonyme->seConnecter()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anonyme))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-18 13:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 13:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 14:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 15:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 15:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

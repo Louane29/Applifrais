@@ -25,11 +25,11 @@ class ComptableFilter implements FilterInterface
 	 */
 	public function before(RequestInterface $request, $arguments = null)
 	{
-            $auth = new Authentif();
+		$auth = new Authentif();
 
-            if (! $auth->estComptable()) {
-                return redirect()->to('/anonyme');
-            }
+		if (! $auth->estComptable()) {
+			return redirect()->to('/anonyme');
+		}
 	}
 
 	// Fonction non implémentée

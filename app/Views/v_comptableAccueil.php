@@ -2,16 +2,23 @@
 
 <?= $this->section('body') ?>
 <div id="contenu">
-	<h2>Gestion des fiches frais des visiteurs</h2>
-	<p>Bienvenue dans votre application de gestion des fiches frais de déplacements des visiteurs. </p>
+	<h2>Gestion des frais des Comptableeeeeeeeeeeeeeee</h2>
+	<p>Bienvenue dans votre application de gestion des frais de déplacements. </p>
 	<p>
-		En tant que comptable vous pouvez suivre le paiement des fiches de frais et accepter ou refuser les fiches de frais des visiteurs.
-                <br>
-		Au moyen du bandeau gauche, vous avez accès aux fonctionalités 
-		du profil comptable : 
+		Afin de couvrir les frais que vous avez engagés lors de vos déplacements professionnels, vous devez compléter des fiches de frais mensuelles.
 		<ul>
-			<li>Valider les fiches de frais des visiteurs</li>
-                        <li>Suivre le paiement des fiches de frais</li>
+			<li>Une fiche de frais court du 1er au dernier jour du mois;
+			<li>Les fiches de frais sont créées automatiquement par l'application au fil de votre utilisation;
+			<li>Vous complétez les fiches de frais à votre rythme;
+			<li>Lorsqu'une fiche est totalement renseignée, vous devrez la "signer" afin qu'elle puisse être traitée par le service comptable;
+		</ul>
+	</p>
+
+	<p>
+		Au moyen du bandeau gauche, vous avez accès aux fonctionalités 
+		du profil visiteur : 
+		<ul>
+			<li>Gérer vos fiches de frais (modifier, signer, imprimer)</li>
 			<li>Se déconnecter</li>
 		</ul>
 	</p>
