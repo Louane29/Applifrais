@@ -24,9 +24,9 @@ class Authentif extends Model
 	  
 	}
         public function estComptable() 
-        {
-            return !is_null($this->session->get('idUser') && $this->session->get('statut') = 'comptable');
-        }
+	{
+		return !is_null($this->session->get('idUser') && $this->session->get('statut') = 'comptable');
+	}
 	
 	/**
 	 * Enregistre dans une variable de session les infos de l'utilisateur connecté
