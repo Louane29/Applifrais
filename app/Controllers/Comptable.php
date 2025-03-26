@@ -75,4 +75,12 @@ class Comptable extends BaseController {
 //		return view('v_visiteurVoirFiche', $this->data);
 //            return "gfd";
 	}
+        
+        public function  fiches($message = "")
+	{
+		$this->data['fiches'] = $this->actComptable->getLesFichesDesVisiteursPourComptable();
+		$this->data['notify'] = $message;
+
+		return view('v_comptableFiches', $this->data);	
+	}
 }

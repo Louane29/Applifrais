@@ -34,6 +34,10 @@
 					<li class="smenu">
 						<?= anchor('comptable/', 'Accueil', 'title="Page d\'accueil"') ?>
 					</li>
+                                        <br/>
+                                        <li class="smenu">
+						<?= anchor('comptable/fiches', 'Suivi des fiches de frais', 'title="Fiches de frais"') ?>
+					</li>
 					<br/>
 					<li class="smenu">
 						<?= anchor('comptable/seDeconnecter', 'Se déconnecter', 'title="Déconnexion"') ?>

@@ -12,16 +12,16 @@ use \DateInterval;
 class ActionsComptable extends Model {
 
 	private $dao;
-	private $idVisiteur;
+	private $idComptable;
 	 
-	function __construct($idVisiteur)
+	function __construct($idComptable)
 	{
 		// Call the Model constructor
 		parent::__construct();
 
 		// chargement du modèle d'accès aux données qui est utile à toutes les méthodes
 		$this->dao = new DataAccess();
-		$this->idVisiteur = $idVisiteur;
+		$this->idComptable = $idComptable;
 	}
 
 	/**
@@ -42,9 +42,9 @@ class ActionsComptable extends Model {
 			// la date au format aaaamm
 			$unMois = $date->format('Ym');
 			// si la fiche pour le mois concerné n'existe pas, ...
-			if(!$this->dao->existeFiche($this->idVisiteur, $unMois)) {
+			if(!$this->dao->existeFiche($this->idComptable, $unMois)) {
 				// ...on la crée
-				$this->dao->insertFiche($this->idVisiteur, $unMois);
+				$this->dao->insertFiche($this->idComptable, $unMois);
 			}
 			// le mois précédent
 			$date->sub($interval);
@@ -56,9 +56,9 @@ class ActionsComptable extends Model {
 	 *
 	 * @param $message : message facultatif destiné à notifier l'utilisateur du résultat d'une action précédemment exécutée
 	*/
-	public function getLesFichesDesVisiteurs($message=null)
+	public function getLesFichesDesVisiteursPourComptable($message=null)
 	{		
-		return $this->dao->getLesFiches($this->idVisiteur);
+		return $this->dao->getLesFiches($this->idComptable);
 	}	
 
 	/**
@@ -70,8 +70,8 @@ class ActionsComptable extends Model {
 	{	
 		$res = array();
 		
-		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idVisiteur, $mois);
-		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idVisiteur, $mois);		
+		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idComptable, $mois);
+		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idComptable, $mois);		
 		
 		return $res;
 	}
