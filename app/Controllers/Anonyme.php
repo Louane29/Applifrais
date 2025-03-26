@@ -16,17 +16,24 @@ class Anonyme extends BaseController
 	public function index()
 	{
 		$authentif = new Authentif();
-		if ($authentif->estVisiteur()) 
-		{
-			return redirect()->to('/visiteur');
-		}
-                elseif ($authentif->estComptable()) 
-		{
-			return redirect()->to('/comptable');
-		}
+                
+                if($authentif->estConnecte())
+                {
+                    if ($authentif->estVisiteur()) 
+                    {
+                        return redirect()->to('/visiteur');
+                    }
+                    elseif ($authentif->estComptable()) 
+                    {
+                        return redirect()->to('/comptable');
+                    }
+                }
+         
+		
+                
 		else
 		{
-			return $this->login ();
+                    return $this->login();
 		}
 	}
 
@@ -44,7 +51,7 @@ class Anonyme extends BaseController
 	 * Traite la soumission du formulaire de connexion afin d'authentifier l'utilisateur
 	 * 
 	 */
-	public function seConnecter () 
+	public function seConnecter() 
 	{	// TODO : conrôler que l'obtention des données postées ne rend pas d'erreurs 
 
 		$login = $this->request->getPost('login');

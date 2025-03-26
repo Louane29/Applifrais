@@ -14,9 +14,9 @@ use \App\Models\ActionsComptable;
 class Comptable extends BaseController {
 
 	private $authentif;
-	private $idVisiteur;
+	private $idComptable;
 	private $data;
-	private $actVisiteur;
+	private $actComptable;
    
 	/**
 	 * Constructeur du contrôleur : constructeur fourni par CodeIgniter. S'exécute après le 
@@ -37,12 +37,12 @@ class Comptable extends BaseController {
 		// Initialisation des attributs de la classe
 		$this->authentif = new Authentif();
 		$this->session = session();
-		$this->idVisiteur = $this->session->get('idUser');
+		$this->idComptable = $this->session->get('idUser');
 		$this->data['identite'] = $this->session->get('prenom').' '.$this->session->get('nom');
-		$this->actVisiteur = new ActionsComptable($this->idVisiteur);
+		$this->actComptable = new ActionsComptable($this->idComptable);
 
 		// Vérification de la présence des 6 dernières fiches de frais pour le visiteur connecté
-		$this->actVisiteur->checkLastSix();
+		$this->actComptable->checkLastSix();
 	}
 
 	/**
@@ -51,7 +51,7 @@ class Comptable extends BaseController {
 	public function index()
 	{
 		// envoie de la vue accueil du visiteur
-		return view('v_visiteurAccueil', $this->data);
+		return view('v_comptableAccueil', $this->data);
 	}
 
 	/**
@@ -73,6 +73,6 @@ class Comptable extends BaseController {
 //		$this->data['fiche'] = $this->actVisiteur->getLaFiche($mois);
 //		$this->data['mois'] = $mois;
 //		return view('v_visiteurVoirFiche', $this->data);
-            return "gfd";
+//            return "gfd";
 	}
 }
