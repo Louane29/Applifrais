@@ -21,12 +21,12 @@
 		<?php    
 			foreach($mesFiches as $uneFiche) 
 			{
-				$modLink = '';
-				$signeLink = '';
+				$validLink = '';
+				$denyLink = '';
 
-				if ($uneFiche['id'] == 'CR') {
-					$modLink = anchor('visiteur/modMaFiche/'.$uneFiche['mois'], 'modifier',  'title="Modifier la fiche"');
-					$signeLink = anchor('visiteur/signeMaFiche/'.$uneFiche['mois'], 'signer',  'title="Signer la fiche"  onclick="return confirm(\'Voulez-vous vraiment signer cette fiche ?\');"');
+				if ($uneFiche['id'] == 'CL') {
+					$validLink = anchor('visiteur/modMaFiche/'.$uneFiche['mois'], 'Valider', 'title="Valider la fiche" onclick="return confirm(\'Voulez-vous vraiment VALIDER cette fiche ?\');"');
+					$denyLink = anchor('visiteur/signeMaFiche/'.$uneFiche['mois'],'Refuser',  'title="Refuser la fiche"  onclick="return confirm(\'Voulez-vous vraiment REFUSER cette fiche ?\');"');
 				}
 
 				$date = new DateTime($uneFiche['dateModif']);
@@ -36,8 +36,8 @@
 					<td class="libelle">'.$uneFiche['libelle'].'</td>
 					<td class="montant">'.$uneFiche['montantValide'].'</td>
 					<td class="date">'.$date->format('d/m/Y').'</td>
-					<td class="action">'.$modLink.'</td>
-					<td class="action">'.$signeLink.'</td>
+					<td class="action">'.$validLink.'</td>
+					<td class="action">'.$denyLink.'</td>
 				</tr>';
 			}
 		?>	  
