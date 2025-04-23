@@ -22,4 +22,4 @@ $routes->get('/anonyme/login', 'Anonyme::login');
 
 $routes->get('/comptable', 'Comptable::index');
 $routes->get('/comptable/seDeconnecter', 'Comptable::SeDeconnecter');
-$routes->get('/comptable/fiches', 'Comptable::fiches');
+$routes->get('/comptable/fichesAValider', 'Comptable::fichesAValider');
