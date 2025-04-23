@@ -56,7 +56,7 @@ class ActionsComptable extends Model {
 	 *
 	 * @param $message : message facultatif destiné à notifier l'utilisateur du résultat d'une action précédemment exécutée
 	*/
-	public function getLesFichesDesVisiteursPourComptable($message=null)
+	public function getLesFichesAValider()
 	{		
 		return $this->dao->getLesFiches($this->idComptable);
 	}	

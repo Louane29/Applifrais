@@ -19,7 +19,7 @@
 		<tbody>
           
 		<?php    
-			foreach($mesFiches as $uneFiche) 
+			foreach($fichesAValider as $uneFiche) 
 			{
 				$validLink = '';
 				$denyLink = '';
@@ -40,7 +40,7 @@
 					<td class="action">'.$denyLink.'</td>
 				</tr>';
 			}
-		?>	  
+		?>	                  
 		</tbody>
     </table>
 
