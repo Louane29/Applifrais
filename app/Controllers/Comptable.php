@@ -40,9 +40,7 @@ class Comptable extends BaseController {
 		$this->idComptable = $this->session->get('idUser');
 		$this->data['identite'] = $this->session->get('prenom').' '.$this->session->get('nom');
 		$this->actComptable = new ActionsComptable($this->idComptable);
-
-		// Vérification de la présence des 6 dernières fiches de frais pour le visiteur connecté
-		$this->actComptable->checkLastSix();
+	
 	}
 
 	/**
@@ -76,10 +74,12 @@ class Comptable extends BaseController {
 //            return "gfd";
 	//}
         
-        public function  fichesAValider()
+        public function  fichesAValider($message = "")
 	{
-		$this->data['fichesAValider'] = $this->actComptable->getLesFichesAValider();
+		$this->data['lesFiches'] = $this->actComptable->getLesFichesAValider();
 
-		return view('v_comptableFiches', $this->data);	
+		return view('v_comptableFichesAValider', $this->data);	
 	}
+        
+       
 }

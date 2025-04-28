@@ -30,26 +30,7 @@ class ActionsComptable extends Model {
 	 * Si l'une d'elle est absente, elle est créée.
 	 * 
 	*/
-	public function checkLastSix()
-	{	
-		// date courante
-		$date = new DateTime ("now");
-		// interval de 1 mois
-		$interval = new DateInterval('P1M');
-		
-		// Six tours de boucle
-		for($i=1; $i<=6; $i++) {
-			// la date au format aaaamm
-			$unMois = $date->format('Ym');
-			// si la fiche pour le mois concerné n'existe pas, ...
-			if(!$this->dao->existeFiche($this->idComptable, $unMois)) {
-				// ...on la crée
-				$this->dao->insertFiche($this->idComptable, $unMois);
-			}
-			// le mois précédent
-			$date->sub($interval);
-		}
-	}
+
 	
 	/**
 	 * Liste les fiches existantes d'un visiteur 
@@ -58,7 +39,7 @@ class ActionsComptable extends Model {
 	*/
 	public function getLesFichesAValider()
 	{		
-		return $this->dao->getLesFiches($this->idComptable);
+		return $this->dao->getLesFichesSigner($this->idComptable);
 	}	
 
 	/**
@@ -75,6 +56,7 @@ class ActionsComptable extends Model {
 		
 		return $res;
 	}
+
 
 	/**
 	 * Signe une fiche de frais en modifiant son état de "CR" à "CL"

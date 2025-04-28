@@ -274,5 +274,16 @@ class DataAccess extends Model {
 						where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
 		$this->db->simpleQuery($req);
 	}
+        
+        public function getLesFichesSigner() {
+		$req = "SELECT idVisiteur, mois, montantValide, dateModif, id, libelle
+			FROM  fichefrais
+                        INNER JOIN etat ON ficheFrais.idEtat = Etat.id 
+			WHERE fichefrais.idEtat = 'CL'
+			ORDER BY mois desc";
+		$rs = $this->db->query($req);
+		$lesFiches = $rs->getResultArray();
+		return $lesFiches;
+	}
 }
 ?>
