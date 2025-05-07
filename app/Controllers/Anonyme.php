@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use \App\Models\Authentif;
@@ -10,24 +12,24 @@ use \App\Models\Authentif;
 class Anonyme extends BaseController
 {
 	/**
-	 * Détecte si l'utilisateur est authentifié et envoie la view adaptée à son profil ou 
+	 * Détecte si l'utilisateur est authentifié et envoie la vue adaptée à son profil ou 
 	 * le formulaire de connexion s'il n'est pas authentifié.
 	 */
 	public function index()
 	{
-		$authentif = new Authentif();
+            $authentif = new Authentif();
                 
-                if($authentif->estConnecte())
+            if($authentif->estConnecte())
+            {
+                if ($authentif->estVisiteur()) 
                 {
-                    if ($authentif->estVisiteur()) 
-                    {
-                        return redirect()->to('/visiteur');
-                    }
-                    elseif ($authentif->estComptable()) 
-                    {
-                        return redirect()->to('/comptable');
-                    }
+                    return redirect()->to('/visiteur');
                 }
+                elseif ($authentif->estComptable()) 
+                {
+                    return redirect()->to('/comptable');
+                }
+            }
                 
 		else
 		{
