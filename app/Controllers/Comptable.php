@@ -59,21 +59,12 @@ class Comptable extends BaseController {
 	{
 		return $this->authentif->deconnecter();
 	}
-
-	/**
-	 * Affiche le détail d'une fiche de frais du visiteur connecté, en lecture seule
-	 *
-	 * @param : le mois de la fiche concernée
-	 */
-	//public function voirLesFiche($mois)
-	//{	// TODO : contrôler la validité du mois de la fiche à consulter
-	
-//		$this->data['fiche'] = $this->actVisiteur->getLaFiche($mois);
-//		$this->data['mois'] = $mois;
-//		return view('v_visiteurVoirFiche', $this->data);
-//            return "gfd";
-	//}
         
+        /**
+         * Affiche les fiches qui doivent être valider ou non par les comptables
+         * @param type $message
+         * @return type
+         */
         public function fichesAValide($message = "")
 	{
 		$this->data['lesFiches'] = $this->actComptable->getLesFichesAValide();
@@ -81,6 +72,12 @@ class Comptable extends BaseController {
 		return view('v_comptableFichesAValide', $this->data);	
 	}
         
+        /**
+         * Valide une fiche par le comptable
+         * @param type $idVisiteur
+         * @param type $mois
+         * @return type
+         */
          public function validerUnefiche($idVisiteur, $mois){
             
             $this->actComptable->validerLaFiche($idVisiteur, $mois);
@@ -89,6 +86,12 @@ class Comptable extends BaseController {
             return view('v_comptableFichesAValide', $this->data);
         }
         
+        /**
+         * Refuse une fiche par le comptable
+         * @param type $idVisiteur
+         * @param type $mois
+         * @return type
+         */
         public function refuserUnefiche($idVisiteur, $mois){
             
            // Récupérer le motif depuis l'URL

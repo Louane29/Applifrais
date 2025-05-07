@@ -24,12 +24,20 @@ class Authentif extends Model
         return !is_null($this->session->get('idUser'));
     }
     
+    /**
+     * Connexion en tant que visiteur
+     * @return type
+     */
     public function estVisiteur()
     {	// TODO : A faire évoluer dès lors qu'il y aura des comptables gérés dans l'application
             return $this->session->get('role') == 0;
 	
     }
-        
+    
+/**
+ * Connexion en tant que comptable
+ * @return type
+ */    
     public function estComptable()
     {	// TODO : A faire évoluer dès lors qu'il y aura des comptables gérés dans l'application
 	return !is_null($this->session->get('idUser') && $this->session->get('role') == 1);

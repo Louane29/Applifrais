@@ -262,6 +262,10 @@ class DataAccess extends Model {
 		$this->db->simpleQuery($req);
 	}
         
+        /**
+         * Affiche toutes les fiches signées
+         * @return type
+         */
         public function getLesFichesSigner() {
 		$req = "SELECT idVisiteur, mois, montantValide, dateModif, id, libelle
 			FROM  fichefrais
@@ -290,6 +294,12 @@ class DataAccess extends Model {
 	
 	}
         
+        /**
+         * Ajoute un motif de refus sur la fiche qui a été refusée
+         * @param type $idVisiteur
+         * @param type $mois
+         * @param type $motif
+         */
          public function updateMotifRefus($idVisiteur, $mois, $motif)
         {
             $sql = "UPDATE fichefrais 
