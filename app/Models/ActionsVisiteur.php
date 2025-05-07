@@ -92,7 +92,7 @@ class ActionsVisiteur extends Model {
 	}
 
 	/**
-	 * Modifie les quantités associées aux frais forfaitisés dans une fiche donnée
+	 * Modifie les quantités associées aux frais forfaitisés dans une fiche donnée   s
 	 * 
 	 * @param $mois : le mois de la fiche concernée
 	 * @param $lesFrais : les quantités liées à chaque type de frais, sous la forme d'un tableau
