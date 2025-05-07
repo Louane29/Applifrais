@@ -74,12 +74,47 @@ class Comptable extends BaseController {
 //            return "gfd";
 	//}
         
-        public function  fichesAValider($message = "")
+        public function fichesAValide($message = "")
 	{
-		$this->data['lesFiches'] = $this->actComptable->getLesFichesAValider();
+		$this->data['lesFiches'] = $this->actComptable->getLesFichesAValide();
 
-		return view('v_comptableFichesAValider', $this->data);	
+		return view('v_comptableFichesAValide', $this->data);	
 	}
         
+         public function validerUnefiche($idVisiteur, $mois){
+            
+            $this->actComptable->validerLaFiche($idVisiteur, $mois);
+            
+            $this->data['lesFiches'] = $this->actComptable->getLesFichesAValide();
+            return view('v_comptableFichesAValide', $this->data);
+        }
+        
+        public function refuserUnefiche($idVisiteur, $mois){
+            
+           // Récupérer le motif depuis l'URL
+            $motif = $this->request->getGet('motif');
+
+            // Appeler la méthode métier avec le motif
+            $this->actComptable->refuserLaFiche($idVisiteur, $mois, $motif);
+
+            // Recharger les fiches
+            $this->data['lesFiches'] = $this->actComptable->getLesFichesAValide();
+
+            return view('v_comptableFichesAValide', $this->data);
+        }
+        
+        
+        	/**
+	 * Affiche le détail d'une fiche de frais du visiteur connecté, en lecture seule
+	 *
+	 * @param : le mois de la fiche concernée
+	 */
+	public function suivreFiche($idVisiteur, $mois)
+	{	// TODO : contrôler la validité du mois de la fiche à consulter
+	
+		$this->data['fiche'] = $this->actComptable->getLaFiche($idVisiteur, $mois);
+		$this->data['mois'] = $mois;
+		return view('v_comptableVoirFiche', $this->data);
+	}
        
 }

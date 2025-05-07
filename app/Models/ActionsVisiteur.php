@@ -86,7 +86,7 @@ class ActionsVisiteur extends Model {
 	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
 
 		$laFiche = $this->dao->getLaFiche($this->idVisiteur,$mois);
-		if($laFiche['idEtat']=='CR'){
+		if($laFiche['idEtat']=='CR' || $laFiche['idEtat']=='RF'){
 				$this->dao->updateEtatFiche($this->idVisiteur, $mois,'CL');
 		}
 	}

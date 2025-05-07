@@ -22,4 +22,8 @@ $routes->get('/anonyme/login', 'Anonyme::login');
 
 $routes->get('/comptable', 'Comptable::index');
 $routes->get('/comptable/seDeconnecter', 'Comptable::SeDeconnecter');
-$routes->get('/comptable/fichesAValider', 'Comptable::fichesAValider');
+$routes->get('/comptable/fichesAValide', 'Comptable::fichesAValide');
+$routes->get('/comptable/validerUneFiche/(:segment)/(:num)', 'Comptable::validerUneFiche/$1/$2');
+$routes->get('/comptable/refuserUneFiche/(:segment)/(:num)', 'Comptable::refuserUneFiche/$1/$2');
+$routes->get('/comptable/suivreFiche/(:segment)/(:num)', 'Comptable::suivreFiche/$1/$2');
+$routes->get('/comptable/suivreFiche', 'Comptable::suivreFiche');

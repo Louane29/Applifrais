@@ -36,7 +36,7 @@
 					</li>
                                         <br/>
                                         <li class="smenu">
-						<?= anchor('comptable/fichesAValider', 'Suivi des fiches de frais', 'title="Fiches de frais"') ?>
+						<?= anchor('comptable/fichesAValide', 'Suivi des fiches de frais', 'title="Fiches de frais"') ?>
 					</li>
 					<br/>
 					<li class="smenu">

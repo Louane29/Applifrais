@@ -28,8 +28,6 @@ class Anonyme extends BaseController
                         return redirect()->to('/comptable');
                     }
                 }
-         
-		
                 
 		else
 		{

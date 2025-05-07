@@ -202,20 +202,7 @@ class DataAccess extends Model {
 		return $laLigne;
 	}
 
-	/**
-	 * Modifie l'état et la date de modification d'une fiche de frais
-	 * 
-	 * @param $idVisiteur 
-	 * @param $mois sous la forme aaaamm
-	 * @param $etat : le nouvel état de la fiche 
-	 */
-	public function updateEtatFiche($idVisiteur,$mois,$etat){
-		$req = "update ficheFrais 
-						set idEtat = '$etat', dateModif = now() 
-						where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
-		$this->db->simpleQuery($req);
-	}
-	
+
 	/**
 	 * Obtient toutes les fiches (sans détail) d'un visiteur donné 
 	 * 
@@ -284,6 +271,33 @@ class DataAccess extends Model {
 		$rs = $this->db->query($req);
 		$lesFiches = $rs->getResultArray();
 		return $lesFiches;
+                
+        }     
+        
+        	/**
+	 * Modifie l'état et la date de modification d'une fiche de frais
+	 * 
+	 * @param $idVisiteur 
+	 * @param $mois sous la forme aaaamm
+	 * @param $etat : le nouvel état de la fiche 
+	 */
+	
+                public function updateEtatFiche($idUtilisateur,$mois,$etat){
+		$req = "update ficheFrais 
+			set idEtat = '$etat', dateModif = now() 
+			where fichefrais.idVisiteur ='$idUtilisateur' and fichefrais.mois = '$mois'";
+		$this->db->simpleQuery($req);
+	
 	}
+        
+         public function updateMotifRefus($idVisiteur, $mois, $motif)
+        {
+            $sql = "UPDATE fichefrais 
+                    SET motifRefus = '$motif'
+                    WHERE idVisiteur = '$idVisiteur' AND mois = '$mois'";
+            $this->db->simpleQuery($sql);
+            
+        }
+        
 }
 ?>
